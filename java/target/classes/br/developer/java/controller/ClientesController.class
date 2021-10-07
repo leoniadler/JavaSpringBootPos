@@ -42,10 +42,7 @@ public class ClientesController {
 		
 	
 	
-//	  @GetMapping("/cadastrar")
-//	  public String cadastrar(@ModelAttribute("cliente") Clientes cliente) {
-//		  return "/clientes/cadastro";
-//	  }
+
 	
 	  @RequestMapping(value = "/cadastrar",  method = RequestMethod.GET)
 		public String cadastrar(@ModelAttribute("cliente") Clientes cliente) {
@@ -60,12 +57,7 @@ public class ClientesController {
 		  return "/clientes/listar";
 	  }
 	  
-//	  @RequestMapping(value = "/listar", method = RequestMethod.GET)
-//		public String listar(ModelMap model) {
-//			List<Clientes> clientes =  Clientes.listAll();
-//			model.addAttribute("clientes", clientes);
-//			return "/clientes/listar";
-//		}
+
 	  
 	  
 	  @PostMapping("/salvar")
@@ -76,18 +68,7 @@ public class ClientesController {
 		//Ou cadastrar
 	  }
 	  
-//	  @RequestMapping(value = "/delete/{cliente}", method = RequestMethod.DELETE)
-//		public String delete(@PathVariable("clientes") Integer cliente) {
-//			ClientesRepository.deleteById(cliente);
-//			return "redirect:/clientes/listar";
-//			
-//		}
-	  
-//	  @RequestMapping(value = "/delete/{clientes}", method = RequestMethod.GET)
-//		public String delete(@PathVariable("cliente") Integer cliente) {
-//			Clientes.delete(cliente);
-//			return "redirect:/clientes/listar";
-//		}
+
 	  
 	  @GetMapping("/alterar/{id}")
 	  public ModelAndView alterar(@PathVariable("id")Long id) {
