@@ -50,14 +50,7 @@ public class ProdutosController {
 		  
 	  }
 	  
-//	  @RequestMapping(value = "/alterar/{id}", method = RequestMethod.GET)
-//		public String alterar(@PathVariable("id") Integer id, Model model) {
-//			Optional<Clientes> byId = repository.getById(id);
-//			if(byId.isPresent()) {
-//				model.addAttribute("cliente", byId.get());
-//			}
-//			return "clientes/listar";
-//	  }
+
 	  
 	  
 	  
